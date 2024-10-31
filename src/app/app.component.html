@@ -1,0 +1,15 @@
+<main>
+   @if (showCard) {
+   
+      <app-card></app-card>
+  
+  
+
+   }@else {
+    <app-form (submit)="toggleVisibilotyCard()"></app-form>
+   }
+ 
+ 
+</main>
+
+<router-outlet></router-outlet>

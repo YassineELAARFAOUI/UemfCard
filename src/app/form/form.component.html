@@ -1,0 +1,14 @@
+<form  (ngSubmit)="CreateCard()">
+    <label for="fullname">Nom Complet</label>
+    <input type="text" placeholder="John Shmoe" name="fullname" id="fullname" [(ngModel)]="student.fullName" required />
+    <label for="schoolname">Etablissement</label>
+    <input id="schoolname" [(ngModel)]="student.schoolName" name="schoolname" required/>
+
+    <label for="studentid">Matricule</label>
+    <input type="number" placeholder="ex:2000345" id="studentid" name="studentid" [(ngModel)]="student.studentId" required />
+
+    <label for="rib">RIP Personnel</label>
+    <input type="text" placeholder="ex:234567890876543212345678" id="rib" name="rib" [(ngModel)]="student.personnalBankId" required/>
+
+    <button type="submit">Sumbit</button>
+</form>
